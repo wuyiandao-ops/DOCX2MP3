@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Database
+app.db
+
+# Office Temp
+~$*.docx
+
+# OS
+.DS_Store
+Thumbs.db

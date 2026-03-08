@@ -1,0 +1,27 @@
+# 📋 開發任務清單 (Todos)
+
+- [x] **1. 環境建置與依賴管理**
+  - [x] 建立 `requirements.txt`
+  - [x] 確認 Python 環境 (Python 3.11)
+- [x] **2. 資料持久層開發 (database.py)**
+  - [x] 實作 SQLAlchemy 模型 (ReplacementRule)
+  - [x] 實作 `init_db()` 初始化
+  - [x] 實作 CRUD 函式 (get_all_rules, add_rule, delete_rule)
+- [x] **3. 核心邏輯開發 (組件)**
+  - [x] **文件解析 (`docx_handler.py`)**: 實作 `extract_text(file_buffer)`
+  - [x] **工具函式 (`utils.py`)**:
+    - [x] 實作智慧切分演算法 `split_text_smartly`
+    - [x] 實作全域文字替換邏輯 `apply_replacement_rules`
+    - [x] 實作批次 ZIP 壓縮功能 `zip_mp3_files`
+  - [x] **語音合成 (`tts_logic.py`)**:
+    - [x] 整合 `edge-tts` 的非同步合成 `generate_audio_async`
+    - [x] 獲取區域語音清單 `get_voices_by_region`
+- [x] **4. 前端介面開發 (app.py)**
+  - [x] 實作 `st.sidebar` 控制項 (Region, Voice, Rate, Pitch)
+  - [x] 實作 `st.tabs(["轉檔任務", "發音字典"])`
+  - [x] 實作字典管理介面 (DataTable + Add/Delete)
+  - [x] 實作轉檔上傳介面 (File uploader + Progress + ZIP download)
+- [x] **5. 整合測試與驗證**
+  - [x] 驗證長文件 ( > 10,000 字) 切分與合成
+  - [x] 驗證字典替換 (般若 -> 波惹)
+  - [x] 驗證多個音檔自動編號與 ZIP 包裝

@@ -1,0 +1,6 @@
+streamlit
+python-docx
+edge-tts
+sqlalchemy
+pandas
+pyttsx3
